@@ -1,0 +1,78 @@
+/* Utility */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* /Utility */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.general-container{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #e579e6;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #8401fb;
+}
+
+/* Main */
+.primo-box{
+    width: 100%;
+    height: 600px;
+    background-color: #e1d67a;
+}
+
+.secondo-box{
+    background-color: #0086ff;
+    width: 100%;
+}
+
+.row{
+    padding: 20px 0;
+}
+
+.col-hd{
+    background-color: #abcfe7;
+    width: 100%;
+    height: 60px;
+}
+
+.col-l, .col-c, .col-r{
+    height: 500px;
+    float: left;
+}
+
+.col-l, .col-r{
+    background-color: #abcfe7;
+    width: 25%;
+}
+
+.col-c{
+    background-color: #abcfe7;
+    width: calc(50% - 40px);
+    margin: 0 20px;
+}
+
+/* Margini */
+header, .primo-box{
+    margin-bottom: 30px;
+}
+.secondo-box{
+    margin-bottom: 10px;
+}
