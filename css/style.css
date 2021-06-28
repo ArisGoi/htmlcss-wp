@@ -8,7 +8,6 @@
 }
 /* /Utility */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,6 +23,7 @@ body {
 header{
     width: 100%;
     height: 60px;
+    margin-bottom: 20px;
 }
 header img{
     height: 100%;
@@ -37,7 +37,7 @@ header .bar{
 }
 
 /* NAVBAR */
-
+nav{margin-bottom: 20px;}
 
 nav ul{list-style: none;}
 
@@ -45,7 +45,7 @@ nav li{
     display: inline-block;
     padding: 15px 15px 15px 0px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     color: #8f8f8f;
 }
 
@@ -56,13 +56,51 @@ footer{
     background-color: #8401fb;
 }
 
-/* Main */
-.primo-box{
+/* Hero */
+.hero{
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 600px;
-    background-color: #e1d67a;
+    height: 500px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    color: white;
+}
+.hero-text-box{
+    max-width: 800px;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 1;
+    padding: 0 50px;
 }
 
+.hero h2{
+    font-weight: 400;
+    font-size: 26pt;
+}
+.hero p{
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+/* ------ */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Wireframe */
 .secondo-box{
     background-color: #0086ff;
     width: 100%;
@@ -92,12 +130,4 @@ footer{
     background-color: #abcfe7;
     width: calc(50% - 40px);
     margin: 0 20px;
-}
-
-/* Margini */
-header, .primo-box{
-    margin-bottom: 30px;
-}
-.secondo-box{
-    margin-bottom: 10px;
 }
