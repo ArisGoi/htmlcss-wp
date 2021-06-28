@@ -37,7 +37,17 @@ header .bar{
 }
 
 /* NAVBAR */
-nav{background-color: pink;}
+
+
+nav ul{list-style: none;}
+
+nav li{
+    display: inline-block;
+    padding: 15px 15px 15px 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #8f8f8f;
+}
 
 /* FOOTER */
 footer{
